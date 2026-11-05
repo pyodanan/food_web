@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --apple-bg: #000000;
+    --apple-card-dark: #121214;
+    --apple-card-light: #f5f5f7;
+    --apple-blue: #0071e3;
+    --apple-blue-hover: #0077ed;
+    --apple-gray: #86868b;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Prompt", "SF Pro Display", sans-serif;
+    letter-spacing: -0.015em;
+    background-color: #000000;
+    color: #f5f5f7;
+  }
+}
+
+/* Apple Glow effects */
+.glow-titanium {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 185, 90, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.glow-ambient {
+  background: radial-gradient(circle at 50% 30%, rgba(0, 113, 227, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+/* Apple Glass */
+.glass-nav {
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.glass-card {
+  background: rgba(22, 22, 24, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
